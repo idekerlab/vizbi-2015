@@ -3,6 +3,7 @@
 ## Introduction
 This is the course material for VIZBI 2015 Tutorial Session.
 
+
 ## Prerequisites
 * Git
 * Docker 1.5+
