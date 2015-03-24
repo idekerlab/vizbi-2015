@@ -1,8 +1,9 @@
-graph { 
-		a -- b; 
-		b -- c; 
-		a -- c; 
-		d -- c; 
-		e -- c; 
-		e -- a; 
+graph simple1 {
+	 	node [shape = circle];
+		a -- b [ interaction = "The" ]; 
+		b -- c [ interaction = "Original" ]; 
+		a -- c [ interaction = "DOT" ]; 
+		d -- c [ interaction = "file" ]; 
+		e -- c [ interaction = "created from" ]; 
+		e -- a [ interaction = "Graphviz" ]; 
 	} 
