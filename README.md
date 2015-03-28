@@ -21,11 +21,12 @@ This is the repository for the course material used in VIZBI 2015 tutorial sessi
 ## Required Software Pakcages
 Make sure your machine has the following to run these notebooks:
 
-* Git (Tested on 2.3.3)
-* Docker (Tested on 1.5)
+* [Git](http://git-scm.com/) (Tested on 2.3.3)
+* [Docker](https://www.docker.com/) (Tested on 1.5)
 
-For cyREST tutorial part, you need the following:
-* Latest version of Java 8
+For the cyREST part, you also need the following:
+
+* [Latest version of Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 * [Cytoscape 3.2.1](http://www.cytoscape.org/download.php)
 * [cyREST App](http://apps.cytoscape.org/apps/cyrest)
 
