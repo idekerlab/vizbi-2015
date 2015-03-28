@@ -19,16 +19,22 @@ This is the repository for the course material used in VIZBI 2015 tutorial sessi
 # Quick Start Guide
 
 ## Required Software Pakcages
-Make sure your machine has the following:
+Make sure your machine has the following to run these notebooks:
 
 * Git (Tested on 2.3.3)
 * Docker (Tested on 1.5)
+
+For cyREST tutorial part, you need the following:
+* Latest version of Java 8
+* [Cytoscape 3.2.1](http://www.cytoscape.org/download.php)
+* [cyREST App](http://apps.cytoscape.org/apps/cyrest)
 
 ## Option 1: Run the container
 If you just want to run these workflows, simply follow this instruction:
 
 1. (Optional) Fork this repo to your own account
-1. Clone this repo: ```git clone https://github.com/idekerlab/vizbi-2015.git``` 
+1. Clone this repo: ```git clone https://github.com/idekerlab/vizbi-2015.git```
+1. ```cd vizbi-2015```
 1. Run Docker image:
 	```docker run -d -p 80:8888 -v $PWD:/notebooks -e "PASSWORD=you_can_use_your_own_pw" -e "USE_HTTP=1" idekerlab/vizbi-2015```
 1. Mac & Windows users: If you use __boot2docker__ to run Docker commands, check the VM's IP address: ```boot2docker ip```
@@ -41,12 +47,15 @@ If you want to edit the container image first, follow this instruction:
 
 1. Fork this repo to your own account
 1. Clone the repo you just forked to your account
+1. cd into the dir
 1. Edit ___Dockerfile___ and add whatever you want to add to this sample image
 1. Build the image: ```docker build -t cyrest-tutorials .```
 1. Run Docker image:
 	```docker run -d -p 80:8888 -v $PWD:/notebooks -e "PASSWORD=you_can_use_your_own_pw" -e "USE_HTTP=1" cyrest-tutorials```
 1. Follow the instruction above from #4
 
+
+For more information and backgrounds, please read [this page](https://github.com/idekerlab/cyREST/wiki/VIZBI-2015-Tutorial).
 
 ----
 
