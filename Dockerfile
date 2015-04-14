@@ -28,6 +28,6 @@ RUN apt-get update && \
 		curl wget
 
 # Install Python dependencie
-RUN pip install networkx python-igraph py2cytoscape==0.3.2 requests bokeh
+RUN pip install networkx python-igraph py2cytoscape==0.3.3 requests bokeh
 
 WORKDIR /notebooks
