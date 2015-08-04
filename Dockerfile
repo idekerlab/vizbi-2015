@@ -25,9 +25,9 @@ RUN apt-key add graph-tool-pub-key.txt
 RUN apt-get update && \
 	apt-get install -y build-essential libxml2-dev libxslt1-dev \
 		python-dev libzmq3-dev libcurl4-openssl-dev python3-graph-tool \
-		curl wget
+		curl wget gcc libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
 # Install Python dependencie
-RUN pip install networkx python-igraph py2cytoscape==0.3.4 requests bokeh
+RUN pip install networkx python-igraph py2cytoscape requests bokeh
 
 WORKDIR /notebooks
